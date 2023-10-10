@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    tools:context=".GameSetupActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
+        android:fontFamily="@font/gloriahallelujah"
+        android:text="Finding Nemo is running away from you. Try to catch it and collect points!"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnEasy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNickname"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#fff"
+        android:ems="10"
+        android:fontFamily="@font/gloriahallelujah"
+        android:hint="Your Nickname"
+        android:inputType="text"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnEasy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnEasy"
+        android:onClick="playEasyMode"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#16FF00"
+        android:fontFamily="@font/gloriahallelujah"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="16dp"
+        android:text="EASY"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnMedium"
+        android:onClick="playMediumMode"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#F99417"
+        android:fontFamily="@font/gloriahallelujah"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="16dp"
+        android:text="MEDIUM"
+        android:textAlignment="textStart"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnHard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnHard"
+        android:onClick="playHardMode"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="165dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#C70039"
+        android:fontFamily="@font/gloriahallelujah"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="16dp"
+        android:text="HARD"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="242dp"
+        android:layout_height="483dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/nemo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
